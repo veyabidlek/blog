@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %}
+<!-- prettier-ignore -->
+{% block title %} {{article.title}} {% endblock %}
+<!-- prettier-ignore -->
+{% block content %}
+
+<div class="features">
+  <h1>{{article.title}}</h1>
+  <p>{{article.date}}</p>
+  <p>{{article.fullText}}</p>
+</div>
+{% endblock %}

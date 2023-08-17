@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+<!-- prettier-ignore -->
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+
+<div class="features">
+  <h1>{{title}}</h1>
+  <p>
+    Cristiano Ronaldo dos Santos Aveiro (born 5 February 1985), better known as
+    Cristiano Ronaldo, is a Portuguese professional footballer who plays as a
+    forward. He is the captain of the Portuguese national team and he is
+    currently playing at Saudi Arabian football club Al Nassr. He is considered
+    to be one of the greatest footballers of all time, and, by some, as the
+    greatest ever.
+  </p>
+  <button class="btn btn-primary">CLUBS</button>
+  {% for club in clubs %}
+  <!-- {% filter upper %} -->
+  <p>{{club|upper}}</p>
+  <!-- {% endfilter %} -->
+  {% endfor %}
+</div>
+
+{% endblock %}

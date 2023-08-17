@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+<!-- prettier-ignore -->
+{% block title %} {{News}} {% endblock %}
+<!-- prettier-ignore -->
+{% block content %}
+
+<div class="features">
+  <h1>News</h1>
+  {% if news %} {% for el in news%}
+  <div class="alert alert-primary">
+    <h3>{{el.title}}</h3>
+    <p>{{el.anons}}</p>
+    <p>{{el.fullText}}</p>
+    <a href="{% url 'newsDetail' el.id %}" class="btn btn-warning">Read More</a>
+  </div>
+  {% endfor %} {% else %}
+  <h2>NO POSTS</h2>
+  {% endif %} {% endblock %}
+</div>

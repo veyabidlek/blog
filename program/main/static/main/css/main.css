@@ -1,0 +1,80 @@
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 20%;
+  padding: 2.5%;
+  height: 100vh;
+  border-right: 3px solid #4d4d4d;
+  color: #fff;
+}
+
+aside img {
+  width: 30%;
+}
+
+aside span {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  color: #ececec;
+  margin-bottom: 20px;
+}
+
+aside ul {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+aside ul li {
+  color: #fff;
+  display: block;
+  transition: 0.3s transform ease;
+}
+
+aside ul a {
+  text-decoration: none;
+}
+
+aside ul li:hover {
+  color: #9e9e9e;
+}
+
+main .features {
+  float: left;
+  color: #fff;
+  margin-top: 100px;
+  text-align: center;
+  width: 75%;
+}
+
+main .features h1 {
+  font-size: 50px;
+}
+main .features p {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.alert-warning {
+  float: left;
+  clear: both;
+  width: 400px;
+  margin: 20px 34%;
+  text-align: left;
+}
+
+form {
+  margin-left: 32%;
+  width: 500px;
+  margin-top: 50px;
+}
